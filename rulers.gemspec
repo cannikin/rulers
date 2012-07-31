@@ -4,8 +4,8 @@ require File.expand_path('../lib/rulers/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Rob Cameron"]
   gem.email         = ["rob.cameron@mellmo.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Rebuilding Rails}
+  gem.summary       = %q{Tutorial project from the Rebuilding Rails book}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
@@ -14,4 +14,9 @@ Gem::Specification.new do |gem|
   gem.name          = "rulers"
   gem.require_paths = ["lib"]
   gem.version       = Rulers::VERSION
+
+  gem.add_runtime_dependency 'rack'
+  
+  gem.add_development_dependency 'pry'
+  gem.add_development_dependency 'pry-nav'
 end
